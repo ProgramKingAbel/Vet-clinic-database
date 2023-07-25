@@ -53,4 +53,4 @@ INSERT INTO animals (
     5,
     TRUE,
     11
-)
+);
