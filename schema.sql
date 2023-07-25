@@ -8,3 +8,10 @@ CREATE TABLE animals (
     neutered BOOLEAN NOT NULL,
     weight_kg NUMERIC (4, 2) NOT NULL
 );
+
+-- Add species column
+ALTER TABLE animals ADD species VARCHAR (250);
+
+-- Adjust NUMERIC VALUE TO ACCOMODATE NEGATIVE VALUES
+ALTER TABLE animals 
+ALTER COLUMN weight_kg TYPE NUMERIC (5, 2);
