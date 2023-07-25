@@ -98,13 +98,14 @@ Clone this repository to your desired folder:
 
 ### Usage
 
-To run the project, execute the following command:
-
+To run the project, execute commands in the psql terminal/SQL Shell:
 
 Example command:
 
 ```sh
-  run commands in psql terminal/ SQL Shell
+  CREATE TABLE animals (
+    name varchar(100)
+);
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -112,8 +113,6 @@ Example command:
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Abel Morara**
 
@@ -125,8 +124,6 @@ Example command:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Optimize database for Horizontal Scaling]**
 
