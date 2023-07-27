@@ -16,7 +16,7 @@ ALTER TABLE animals ADD species VARCHAR (250);
 ALTER TABLE animals 
 ALTER COLUMN weight_kg TYPE NUMERIC (5, 2);
 
---TABLE OWNER 
+--TABLE OWNERS 
 
 CREATE TABLE owners (
     id SERIAL,
