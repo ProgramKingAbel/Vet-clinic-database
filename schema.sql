@@ -42,3 +42,11 @@ ALTER TABLE animals
 ADD species_id INT REFERENCES species(id);
 
 ALTER TABLE animals ADD owners_id INT REFERENCES owners(id);
+
+-- TABLE VETS
+CREATE TABLE vets (
+    id SERIAL,
+    name VARCHAR (250) NOT NULL,
+    age INT NOT NULL,
+    date_of_graduation DATE NOT NULL
+);
