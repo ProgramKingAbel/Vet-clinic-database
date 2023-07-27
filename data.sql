@@ -89,3 +89,11 @@ INSERT INTO owners (
 ('Melody Pond', 77),
 ('Dean Winchester', 14),
 ('Jodey Whittaker', 38);
+
+-- Update species_id in table animals
+UPDATE animals 
+SET species_id = CASE 
+WHEN name LIKE '%mon' THEN (SELECT id FROM species WHERE name = 'Digimon')
+ELSE 
+(SELECT id FROM species WHERE name = 'Pokemon')
+END;
