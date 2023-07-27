@@ -9,6 +9,10 @@ CREATE TABLE animals (
     weight_kg NUMERIC (4, 2) NOT NULL
 );
 
+--Add PK to animals table 
+
+ALTER TABLE animals ADD PRIMARY KEY(id);
+
 -- Add species column
 ALTER TABLE animals ADD species VARCHAR (250);
 
@@ -58,4 +62,12 @@ CREATE TABLE specializations (
     vet_id INT REFERENCES vets(id),
     species_id INT REFERENCES species(id),
     PRIMARY KEY(id)
+);
+
+CREATE TABLE visits (
+    id SERIAL,
+    animal_id INTEGER REFERENCES animals(id),
+    vet_id INTEGER REFERENCES vets(id),
+    visit_date DATE NOT NULL,
+    PRIMARY KEY (id)
 );
