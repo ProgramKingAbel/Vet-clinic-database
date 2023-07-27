@@ -154,7 +154,7 @@ JOIN animals a ON v.animal_id = a.id
 ORDER BY v.visit_date DESC
 LIMIT 1;
 
-SELECT COUNT(*) AS num_visits_without_specialization, vt.name
+SELECT COUNT(*) AS num_visits_without_specialization
 FROM visits v
 JOIN vets vt ON v.vet_id = vt.id
 JOIN animals a ON v.animal_id = a.id
@@ -181,4 +181,5 @@ JOIN visits v ON a.id = v.animal_id
 JOIN vets vt ON v.vet_id = vt.id
 WHERE vt.name = 'Maisy Smith'
 GROUP BY s.name
-ORDER BY total_visits_for_specialty DESC;
+ORDER BY total_visits_for_specialty DESC
+LIMIT 1;
