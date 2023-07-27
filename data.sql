@@ -69,3 +69,11 @@ INSERT INTO animals (
 ('Boarmon', '2005-06-07', 7, TRUE, 20.4),
 ('Blossom', '1998-10-13', 3, TRUE, 17),
 ('Ditto', '2022-05-14', 4, TRUE, 22);
+
+--ADD data to species table 
+
+INSERT INTO species (
+    name
+) VALUES 
+( 'Pokemon'),
+('Digimon');
