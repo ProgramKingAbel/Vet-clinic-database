@@ -15,3 +15,30 @@ ALTER TABLE animals ADD species VARCHAR (250);
 -- Adjust NUMERIC VALUE TO ACCOMODATE NEGATIVE VALUES
 ALTER TABLE animals 
 ALTER COLUMN weight_kg TYPE NUMERIC (5, 2);
+
+--TABLE OWNER 
+
+CREATE TABLE owners (
+    id SERIAL,
+    full_name VARCHAR (250) NOT NULL,
+    age INT NOT NULL,
+    PRIMARY KEY (id)
+);
+
+-- TABLE SPECIES
+CREATE TABLE species (
+    id SERIAL,
+    name VARCHAR (250) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+-- Modify animals table 
+
+--rm column species
+ALTER TABLE animals DROP species;
+
+--add fk 
+ALTER TABLE animals 
+ADD species_id INT REFERENCES species(id);
+
+ALTER TABLE animals ADD owners_id INT REFERENCES owners(id);
