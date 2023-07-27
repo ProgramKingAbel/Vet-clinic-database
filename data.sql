@@ -121,3 +121,11 @@ INSERT INTO vets (
 ('Maisy Smith', 26, '2019-01-17'),
 ('Stephanie Mendez', 64, '1981-05-04'),
 ('Jack Harkness', 38, '2008-06-08');
+
+-- Insert specializations for multiple vets and species
+INSERT INTO specializations (vet_id, species_id)
+SELECT v.id, s.id
+FROM vets v
+JOIN species s ON (v.name = 'William Tatcher' AND s.name = 'Pokemon')
+              OR (v.name = 'Stephanie Mendez' AND s.name IN ('Digimon', 'Pokemon'))
+              OR (v.name = 'Jack Harkness' AND s.name = 'Digimon');
