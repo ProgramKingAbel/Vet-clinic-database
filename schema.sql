@@ -48,5 +48,14 @@ CREATE TABLE vets (
     id SERIAL,
     name VARCHAR (250) NOT NULL,
     age INT NOT NULL,
-    date_of_graduation DATE NOT NULL
+    date_of_graduation DATE NOT NULL,
+    PRIMARY KEY(id)
+);
+
+-- Create join table specialization
+CREATE TABLE specializations (
+    id SERIAL,
+    vet_id INT REFERENCES vets(id),
+    species_id INT REFERENCES species(id),
+    PRIMARY KEY(id)
 );
