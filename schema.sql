@@ -29,6 +29,12 @@ CREATE TABLE owners (
     PRIMARY KEY (id)
 );
 
+-- drop NOT NULL constraint
+ALTER TABLE owners ALTER COLUMN age DROP NOT NULL;
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
 -- TABLE SPECIES
 CREATE TABLE species (
     id SERIAL,
