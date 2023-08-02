@@ -29,6 +29,12 @@ CREATE TABLE owners (
     PRIMARY KEY (id)
 );
 
+-- drop NOT NULL constraint
+ALTER TABLE owners ALTER COLUMN age DROP NOT NULL;
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
 -- TABLE SPECIES
 CREATE TABLE species (
     id SERIAL,
@@ -71,3 +77,8 @@ CREATE TABLE visits (
     visit_date DATE NOT NULL,
     PRIMARY KEY (id)
 );
+
+CREATE INDEX idx_visits_animal_id ON visits (animal_id);
+CREATE INDEX idx_visits_vet_id ON visits (vet_id);
+CREATE INDEX idx_owners_email ON owners (email);
+

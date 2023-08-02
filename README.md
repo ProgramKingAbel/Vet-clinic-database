@@ -120,6 +120,18 @@ Example command:
 - Twitter: [@CEOAbel1](https://twitter.com/CEOAbel1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/abelmatundamorara-451340250)
 
+👤 **Sahalu Aminu**
+
+- GitHub: [@sahlminkok](https://github.com/sahlminkok)
+- Twitter: [@sahlminkok](https://twitter.com/sahlminkok)
+- LinkedIn: [sahlminkok](https://linkedin.com/in/sahlminkok)
+
+👤 **Okongo Derrick**
+    
+- GitHub: [@derrick14](https://github.com/derrick1451)
+- Twitter: [@derrick14](https://twitter.com/DerrickHayle)
+- LinkedIn: [okongo derrick](https://www.linkedin.com/in/okongo-derrick-a0147622b/)
+
 
 <!-- FUTURE FEATURES -->
 
