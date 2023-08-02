@@ -1,9 +1,13 @@
+-- Create patients table
+
 CREATE TABLE patients (
   id INT,
   name VARCHAR(255),
   date_of_birth DATE,
   PRIMARY KEY(id)
 );
+
+-- Create invoices table
 
 CREATE TABLE invoices (
   id INT,
