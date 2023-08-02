@@ -23,7 +23,7 @@ CREATE TABLE invoices (
 CREATE TABLE medical_histories (
   id INT,
   admitted_at TIMESTAMP,
-  patient_id INT,
+  patient_id INT REFERENCES patient(id),
   status VARCHAR(255),
   PRIMARY KEY (id)
 );
