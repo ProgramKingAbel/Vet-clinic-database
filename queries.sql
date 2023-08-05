@@ -171,7 +171,7 @@ JOIN animals a ON v.animal_id = a.id
 WHERE NOT EXISTS (
     SELECT 1
     FROM specializations s
-    WHERE s.vet_id = vt.id AND s.species_id = a.species_id
+    WHERE s.vet_id = vt.id AND s.species_id = a.species_i
 );
 
 SELECT s.name AS specialty, COUNT(*) AS total_visits_for_specialty
